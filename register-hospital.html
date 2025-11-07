@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Hospital Registration</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="blood logo.jpg" alt="logo" /></a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="donors.html">Donors</a>
+        <a href="requests.html">Requests</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container card-panel form-panel">
+    <h1>Hospital Registration</h1>
+    <form id="hospitalForm">
+      <label>Hospital ID<input name="hospitalId" placeholder="Hospital id" required /></label>
+      <label>Name of Hospital<input name="name" placeholder="Name of Hospital" required /></label>
+      <label>Email<input type="email" name="email" placeholder="Email Address (Hospital)" required /></label>
+      <label>Address<textarea name="address" placeholder="Address of Hospital" required></textarea></label>
+      <label>Applicant (in-charge)<input name="applicant" placeholder="Name of applicant (In-charge)" required /></label>
+      <label>Contact Number<input name="contact" placeholder="Contact Number (In-charge)" required /></label>
+      <button type="submit" class="btn full">Register Hospital</button>
+    </form>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

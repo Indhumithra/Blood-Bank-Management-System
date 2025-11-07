@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Donor Registration</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="blood logo.jpg" alt="logo" /></a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="donors.html">Donors</a>
+        <a href="requests.html">Requests</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container card-panel form-panel">
+    <h1>Donor Registration</h1>
+    <form id="donorForm">
+      <label>Username<input name="username" placeholder="Username" required /></label>
+      <label>Email<input type="email" name="email" placeholder="Email Address" required /></label>
+      <label>Age<input type="number" name="age" min="17" placeholder="Enter Age" required /></label>
+      <label>Weight (kg)<input type="number" name="weight" min="40" placeholder="Enter Weight" required /></label>
+      <label>Address<textarea name="address" placeholder="Enter your address" required></textarea></label>
+      <label>Mobile<input name="mobile" placeholder="Enter Mobile Number" required /></label>
+      <label>Blood Group
+        <select name="blood" required>
+          <option value="">Select</option>
+          <option>A+</option><option>A-</option><option>B+</option><option>B-</option>
+          <option>AB+</option><option>AB-</option><option>O+</option><option>O-</option>
+        </select>
+      </label>
+      <div class="row">
+        <label><input type="radio" name="gender" value="Male" required /> Male</label>
+        <label><input type="radio" name="gender" value="Female" /> Female</label>
+        <label><input type="radio" name="gender" value="Other" /> Other</label>
+      </div>
+      <button type="submit" class="btn full">Register</button>
+    </form>
+    <p class="muted">Already registered? <a href="login.html">Login</a></p>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Blood Request</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="blood logo.jpg" alt="logo" /></a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="requests.html">Requests</a>
+        <a href="register-donor.html">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container card-panel request-panel">
+    <h1>Blood Request</h1>
+    <form id="requestForm" class="grid-2">
+      <label>Full Name<input name="name" placeholder="Enter your name" required /></label>
+      <label>Email<input type="email" name="email" placeholder="Enter your email" required /></label>
+      <label>Location<input name="location" placeholder="Enter Location" required /></label>
+      <label>City<input name="city" placeholder="Enter your city" required /></label>
+      <label>Blood Group
+        <select name="blood" required>
+          <option value="">Select</option>
+          <option>A+</option><option>A-</option><option>B+</option><option>B-</option>
+          <option>AB+</option><option>AB-</option><option>O+</option><option>O-</option>
+        </select>
+      </label>
+      <label>Phone number<input name="phone" placeholder="Enter phone number" required /></label>
+
+      <fieldset class="fullwidth">
+        <legend>Gender</legend>
+        <label><input type="radio" name="gender" value="Male" required /> Male</label>
+        <label><input type="radio" name="gender" value="Female" /> Female</label>
+        <label><input type="radio" name="gender" value="Other" /> Other</label>
+      </fieldset>
+
+      <div class="fullwidth">
+        <button type="submit" class="btn full">Send Request</button>
+      </div>
+    </form>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
